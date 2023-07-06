@@ -1,0 +1,48 @@
+/* Import OMORI UI font. (C) OMOCAT */
+
+@font-face {
+	font-family: OMORI_GAME;
+	src: url(assets/OMORI_GAME.ttf);
+}
+
+@font-face {
+	font-family: OMORI_GAME2;
+	src: url(assets/OMORI_GAME2.ttf);
+}
+
+/* Border box mode preferred */
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	color: white;
+	background: black url(assets/headSpace.png);
+	font: normal 2em OMORI_GAME2, monospace;
+	--border: solid .3rem white;
+}
+
+/* Reset margins */
+
+body, h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+/* Reset all link (anchor) elements */
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+::selection {
+	background: white;
+	color: black;
+}
+
+/* Decrease font size on smaller devices, e.g phones */
+
+@media (max-width: 500px) {
+	:root {font-size: 1.7em;}
+}
