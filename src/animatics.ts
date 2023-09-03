@@ -5,6 +5,14 @@ export interface Animatic {
 	channel: string;
 }
 
+export function mostRecent(a: Animatic, b: Animatic) {
+	if (a.date > b.date) {
+		return 1;
+	} else if (a.date < b.date) {
+		return -1;
+	} return 0;
+}
+
 export const animatics: Animatic[] = [
 	{
 		"yt_id": "ceU9nuyUxhQ",

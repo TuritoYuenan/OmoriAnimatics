@@ -1,13 +1,15 @@
 /* Import OMORI UI font. (C) OMOCAT */
 
 @font-face {
-	font-family: OMORI_GAME;
 	src: url(assets/OMORI_GAME.ttf);
+	font-family: OMORI_GAME;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: OMORI_GAME2;
 	src: url(assets/OMORI_GAME2.ttf);
+	font-family: OMORI_GAME2;
+	font-display: swap;
 }
 
 /* Border box mode preferred */

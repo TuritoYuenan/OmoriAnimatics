@@ -5,6 +5,8 @@
 	import Card from './components/Card.svelte';
 
 	// Load data
+	import { animatics, mostRecent } from './animatics';
+	animatics.sort(mostRecent);
 </script>
 
 <Header
