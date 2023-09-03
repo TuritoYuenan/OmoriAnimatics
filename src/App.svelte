@@ -1,12 +1,15 @@
 <script lang="ts">
-	import Header from './lib/Header.svelte';
-	import Footer from './lib/Footer.svelte';
-	import Card from './lib/Card.svelte';
+	// Load components
+	import Header from './components/Header.svelte';
+	import Footer from './components/Footer.svelte';
+	import Card from './components/Card.svelte';
 
-	import { animatics } from './animatics';
+	// Load data
 </script>
 
-<Header />
+<Header
+	title="OMORI Animatics Repository"
+	desc="Collection of OMORI animatic videos on Youtube" />
 <main>
 	{#each animatics as animatic}
 		<Card {animatic} />
@@ -16,11 +19,10 @@
 
 <style>
 	main {
-		min-height: 80vh;
 		padding: 1rem;
-		gap: 1rem;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+		gap: 1rem;
 	}
 
 	@media (max-width: 500px) {
