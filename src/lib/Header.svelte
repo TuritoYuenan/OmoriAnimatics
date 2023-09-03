@@ -5,11 +5,11 @@
 
 <style>
 	header {
-		padding: 1em;
+		padding: 1rem;
 		background: black;
 		color: white;
 		text-align: center;
-		border-bottom: solid .3rem white;
+		border-bottom: solid 0.3rem white;
 	}
 
 	header h1 {

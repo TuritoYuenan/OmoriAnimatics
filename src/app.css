@@ -19,13 +19,22 @@
 :root {
 	color: white;
 	background: black url(assets/headSpace.png);
-	font: normal 2em OMORI_GAME2, monospace;
-	--border: solid .3rem white;
+	font:
+		normal 2em OMORI_GAME2,
+		monospace;
+	--border: solid 0.3rem white;
 }
 
 /* Reset margins */
 
-body, h1, h2, h3, h4, h5, h6, p {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	margin: 0;
 }
 
@@ -44,5 +53,7 @@ a {
 /* Decrease font size on smaller devices, e.g phones */
 
 @media (max-width: 500px) {
-	:root {font-size: 1.7em;}
+	:root {
+		font-size: 1.7em;
+	}
 }

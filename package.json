@@ -5,14 +5,37 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite --host",
+		"dev": "vite dev --open",
 		"build": "vite build",
 		"serve": "vite preview",
-		"convert": "python ./convert.py"
+		"convert": "python ./convert.py",
+		"check-format": "prettier --plugin-search-dir . --check .",
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^1.0.1",
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
 		"svelte": "^3.49.0",
 		"vite": "^3.0.4"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"singleQuote": true,
+		"bracketSameLine": true,
+		"trailingComma": "none",
+		"quoteProps": "preserve",
+		"plugins": [
+			"prettier-plugin-svelte"
+		],
+		"overrides": [
+			{
+				"files": "*.svelte",
+				"options": {
+					"parser": "svelte"
+				}
+			}
+		]
 	}
 }

@@ -1,7 +1,7 @@
 <footer>
 	<p>
 		&COPY; OMORI by <a href="https://omocat.com/bio">OMOCAT</a>.
-		Svelte project by <a href="https://turitoyuenan.github.io">Turito Yuenan</a>
+		Svelte project by <a href="https://turitoyuenan.pages.dev">Turito Yuenan</a>
 	</p>
 </footer>
 

@@ -12,18 +12,17 @@
 </a>
 
 <style>
-	/* Card */ a {
-		padding: 0.5em;
+	/* Card */
+	a {
+		padding: 0.5rem;
 		background: black;
 		border: var(--border);
+		transition: 0.5s ease;
 	}
 
-	/* Highlight upon hover */ a:hover {
+	/* Highlight upon hovering */
+	a:hover {
 		background: white;
 		color: black;
-	}
-
-	/* Animation */ a, a:hover {
-		transition: 0.5s ease;
 	}
 </style>
