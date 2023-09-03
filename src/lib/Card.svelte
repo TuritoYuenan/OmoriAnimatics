@@ -1,10 +1,9 @@
-<script>
-	export let yt_id;
-	export let date;
-	export let title;
-	export let channel;
+<script lang="ts">
+	import { type Animatic } from '../animatics';
+	export let animatic: Animatic;
 
-	let href = "https://youtu.be/" + yt_id;
+	const { yt_id, title, channel, date } = animatic;
+	const href: string = 'https://youtu.be/' + yt_id;
 </script>
 
 <a {href} target="_blank" rel="noreferrer noopener">

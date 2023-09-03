@@ -1,19 +1,15 @@
-<script>
-	import Header from "./lib/Header.svelte";
-	import Footer from "./lib/Footer.svelte";
+<script lang="ts">
+	import Header from './lib/Header.svelte';
+	import Footer from './lib/Footer.svelte';
+	import Card from './lib/Card.svelte';
 
-	import Card from "./lib/Card.svelte";
-	import list from "./db/animatics.json";
-
-	// Print the imported list
-	console.log(list);
-	console.log("Type of imported JSON file: " + typeof list);
+	import { animatics } from './animatics';
 </script>
 
 <Header />
 <main>
-	{#each list as { yt_id, date, channel, title }}
-		<Card {yt_id} {date} {channel} {title} />
+	{#each animatics as animatic}
+		<Card {animatic} />
 	{/each}
 </main>
 <Footer />

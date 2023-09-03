@@ -3,6 +3,7 @@
 	"author": "Turito Yuenan",
 	"description": "Collection of Youtube's OMORI animatics",
 	"version": "1.0.0",
+	"type": "module",
 	"scripts": {
 		"dev": "vite --host",
 		"build": "vite build",
