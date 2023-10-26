@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"module": "NodeNext",
-		"moduleResolution": "node",
+		"moduleResolution": "NodeNext",
 		"target": "ESNext",
 		/**
 		 * Typecheck JS in `.svelte` and `.js` files by default.
