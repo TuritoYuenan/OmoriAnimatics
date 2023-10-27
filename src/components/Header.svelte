@@ -11,19 +11,16 @@
 <header>
 	<h1>{title}</h1>
 	<p>{desc}</p>
+	<slot />
 </header>
 
 <style>
 	header {
+		margin: 1rem;
 		padding-inline: 1rem;
 		padding-block: 2rem;
 		background: black;
-		color: white;
 		text-align: center;
-		border-bottom: solid 0.3rem white;
-	}
-
-	header h1 {
-		margin: 0;
+		border: var(--border);
 	}
 </style>

@@ -6,9 +6,7 @@
 </script>
 
 <footer>
-	<p>
-		&COPY; OMORI by <a href={links.omocat}>OMOCAT</a>.
-	</p>
+	<p>&COPY; OMORI by <a href={links.omocat}>OMOCAT</a>.</p>
 	<p>
 		Svelte project by
 		<a target="_blank" href={links.turito}> Turito Yuenan </a>
@@ -17,14 +15,18 @@
 
 <style>
 	footer {
-		width: 100%;
-		padding: 0.3rem;
-		text-align: center;
+		margin: 1rem;
+		padding: 1rem;
 		background: black;
-		border-top: var(--border);
-	}
+		text-align: center;
+		border: var(--border);
 
-	footer a {
-		color: yellow;
+		& a {
+			color: yellow;
+		}
+
+		& a::after {
+			content: " (external link)";
+		}
 	}
 </style>

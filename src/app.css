@@ -21,9 +21,9 @@
 :root {
 	color: white;
 	background: black url(assets/headSpace.png);
-	font:
-		normal 2em OMORI_GAME2,
-		monospace;
+	font-family: OMORI_GAME2, monospace;
+	font-size: 32px;
+
 	--border: solid 0.3rem white;
 }
 

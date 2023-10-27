@@ -1,12 +1,11 @@
 <script lang="ts">
-	const youtube = ['https://youtube.com', 'https://piped.video'];
-
 	export let data: any;
+	export let site: string = "https://youtube.com";
 	const { uploaderName, uploadedDate, thumbnail, title, url } = data;
 </script>
 
-<a href={youtube[0] + url} target="_blank" rel="noreferrer noopener">
-	<img src={thumbnail} alt="Video thumbnail" />
+<a href={site + url} target="_blank" rel="noreferrer noopener">
+	<img src={thumbnail} alt="Video thumbnail" width="336" height="188" />
 	<section>
 		<p><small>{uploadedDate}</small> - by {uploaderName}</p>
 		<p><strong>{title}</strong></p>
