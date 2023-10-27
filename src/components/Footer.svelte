@@ -1,7 +1,17 @@
+<script>
+	const links = {
+		omocat: 'https://omocat.com/bio',
+		turito: 'https://turitoyuenan.github.io/portfolio'
+	};
+</script>
+
 <footer>
 	<p>
-		&COPY; OMORI by <a href="https://omocat.com/bio">OMOCAT</a>.
-		Svelte project by <a href="https://turitoyuenan.pages.dev">Turito Yuenan</a>
+		&COPY; OMORI by <a href={links.omocat}>OMOCAT</a>.
+	</p>
+	<p>
+		Svelte project by
+		<a target="_blank" href={links.turito}> Turito Yuenan </a>
 	</p>
 </footer>
 
@@ -9,6 +19,7 @@
 	footer {
 		width: 100%;
 		padding: 0.3rem;
+		text-align: center;
 		background: black;
 		border-top: var(--border);
 	}

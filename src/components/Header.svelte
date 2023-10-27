@@ -15,7 +15,8 @@
 
 <style>
 	header {
-		padding: 1rem;
+		padding-inline: 1rem;
+		padding-block: 2rem;
 		background: black;
 		color: white;
 		text-align: center;

@@ -4,17 +4,18 @@
 const endpoint = 'https://pipedapi.kavin.rocks/playlists/';
 
 /**
- * Array of videos in the playlist
+ * "OMORI Animatics" playlist ID
  */
-let videos;
+const playlist = 'PLN0RqFX2ugKWd5zj3s7uobPsqNIpbxgfD';
 
 /**
- * Request playlist data from Piped
+ * Request to Piped for playlist data
  */
-export default (async (source: string) => {
-	const response = await fetch(endpoint + source);
-	const rawData = await response.json();
-	videos = rawData.relatedStreams;
-})('PLN0RqFX2ugKWd5zj3s7uobPsqNIpbxgfD');
+export default (
+	async (source: string) => {
+		const response = await fetch(source);
+		const rawData = await response.json();
 
-export { videos };
+		return rawData.relatedStreams;
+	}
+)(endpoint + playlist);

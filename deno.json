@@ -1,21 +1,11 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
 		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"isolatedModules": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
 		"lib": [
 			"deno.window",
 			"dom",
 			"ESNext"
-		],
-		"module": "NodeNext",
-		"moduleResolution": "NodeNext",
-		"target": "ESNext"
+		]
 	},
 	"fmt": {
 		"indentWidth": 4,
@@ -23,6 +13,13 @@
 		"semiColons": true,
 		"singleQuote": true,
 		"useTabs": true
+	},
+	"imports": {
+		"vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^2.4.6",
+		"prettier-plugin-svelte": "npm:prettier-plugin-svelte@^3.0.3",
+		"prettier": "npm:prettier@^3.0.3",
+		"svelte": "npm:svelte@^4.2.2",
+		"vite": "npm:vite@^4.5.0"
 	},
     "include": [
 		"src/**/*.d.ts",

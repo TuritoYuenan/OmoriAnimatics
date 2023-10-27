@@ -4,13 +4,6 @@
 	"description": "Collection of Youtube's OMORI animatics",
 	"version": "1.0.0",
 	"type": "module",
-	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^2.4.6",
-		"prettier": "^3.0.3",
-		"prettier-plugin-svelte": "^3.0.3",
-		"svelte": "^4.2.2",
-		"vite": "^4.5.0"
-	},
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4,

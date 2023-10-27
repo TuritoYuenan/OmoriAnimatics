@@ -5,7 +5,7 @@
 	import Card from './components/Card.svelte';
 
 	// Load data
-	import promise, { videos } from './animatics';
+	import promise from './animatics';
 </script>
 
 <Header
@@ -14,8 +14,7 @@
 <main>
 	{#await promise}
 		<h1>Loading</h1>
-	<!-- result of me mishmashing different tutorials -->
-	{:then whatever}
+	{:then videos}
 		{#each videos as video}
 			<Card data={video} />
 		{/each}
