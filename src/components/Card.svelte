@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { type Animatic } from '../animatics';
+	import { type Animatic } from '../animatics.js';
 
 	// Video metadata
 	export let animatic: Animatic;

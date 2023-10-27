@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"lib": [
+			"deno.window",
+			"dom"
+		],
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"target": "ESNext"
+	},
+	"fmt": {
+		"indentWidth": 4,
+		"lineWidth": 80,
+		"semiColons": true,
+		"singleQuote": true,
+		"useTabs": true
+	},
+    "include": [
+		"src/**/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.svelte",
+		"src/**/*.ts"
+	],
+	"tasks": {
+		"build": "deno run -A npm:vite build",
+		"dev": "deno run -A npm:vite dev --open",
+		"serve": "deno run -A npm:vite preview",
+		"prettier-chk": "deno run -A npm:prettier --plugin-search-dir . --check .",
+		"prettier-fmt": "deno run -A npm:prettier --plugin-search-dir . --write ."
+	}
+}

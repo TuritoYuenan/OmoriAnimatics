@@ -5,7 +5,7 @@
 	import Card from './components/Card.svelte';
 
 	// Load data
-	import { animatics, mostRecent } from './animatics';
+	import { animatics, mostRecent } from './animatics.js';
 	animatics.sort(mostRecent);
 </script>
 
