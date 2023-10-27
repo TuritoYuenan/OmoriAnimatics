@@ -1,22 +1,14 @@
 <script lang="ts">
-	import { type Animatic } from '../animatics';
+	const youtube = ['https://youtube.com', 'https://piped.video'];
 
-	// Video metadata
-	export let animatic: Animatic;
-	const { yt_id, title, channel, date } = animatic;
-
-	// Link to Youtube
-	const href: string = 'https://youtu.be/' + yt_id;
-
-	// Load Youtube video thumbnail
-	const imageFile: string = 'sddefault';
-	const src: string = `https://i.ytimg.com/vi/${yt_id}/${imageFile}.jpg`;
+	export let data: any;
+	const { uploaderName, uploadedDate, thumbnail, title, url } = data;
 </script>
 
-<a {href} target="_blank" rel="noreferrer noopener">
-	<img {src} alt="Video thumbnail" />
+<a href={youtube[0] + url} target="_blank" rel="noreferrer noopener">
+	<img src={thumbnail} alt="Video thumbnail" />
 	<section>
-		<p><small>{date}</small> - by {channel}</p>
+		<p><small>{uploadedDate}</small> - by {uploaderName}</p>
 		<p><strong>{title}</strong></p>
 	</section>
 </a>

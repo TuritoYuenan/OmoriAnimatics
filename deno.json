@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"lib": [
+			"deno.window",
+			"dom",
+			"ESNext"
+		]
+	},
+	"fmt": {
+		"indentWidth": 4,
+		"lineWidth": 80,
+		"semiColons": true,
+		"singleQuote": true,
+		"useTabs": true
+	},
+	"imports": {
+		"vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^2.4.6",
+		"prettier-plugin-svelte": "npm:prettier-plugin-svelte@^3.0.3",
+		"prettier": "npm:prettier@^3.0.3",
+		"svelte": "npm:svelte@^4.2.2",
+		"vite": "npm:vite@^4.5.0"
+	},
+    "include": [
+		"src/**/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.svelte",
+		"src/**/*.ts"
+	],
+	"tasks": {
+		"build": "deno run -A npm:vite build",
+		"dev": "deno run -A npm:vite dev --open",
+		"serve": "deno run -A npm:vite preview",
+		"prettier-chk": "deno run -A npm:prettier --plugin-search-dir . --check .",
+		"prettier-fmt": "deno run -A npm:prettier --plugin-search-dir . --write ."
+	}
+}

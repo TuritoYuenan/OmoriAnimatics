@@ -5,17 +5,22 @@
 	import Card from './components/Card.svelte';
 
 	// Load data
-	import { animatics, mostRecent } from './animatics';
-	animatics.sort(mostRecent);
+	import promise from './animatics';
 </script>
 
 <Header
-	title="OMORI Animatics Repository"
+	title="OMORI Animatics"
 	desc="Collection of OMORI animatic videos on Youtube" />
 <main>
-	{#each animatics as animatic}
-		<Card {animatic} />
-	{/each}
+	{#await promise}
+		<h1>Loading</h1>
+	{:then videos}
+		{#each videos as video}
+			<Card data={video} />
+		{/each}
+	{:catch error}
+		<h1>{error.message}</h1>
+	{/await}
 </main>
 <Footer />
 
