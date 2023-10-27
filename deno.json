@@ -10,7 +10,8 @@
 		"sourceMap": true,
 		"lib": [
 			"deno.window",
-			"dom"
+			"dom",
+			"ESNext"
 		],
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
